@@ -69,8 +69,9 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":mirai-core-utils"))
-                api(kotlin("serialization"))
-                api(kotlin("reflect"))
+                api(kotlin("stdlib-jdk8", Versions.kotlinStdlib))
+                api(kotlin("serialization", Versions.kotlinStdlib))
+                api(kotlin("reflect", Versions.kotlinStdlib))
 
                 api1(`kotlinx-serialization-core`)
                 api1(`kotlinx-serialization-json`)
