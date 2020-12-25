@@ -44,6 +44,8 @@ object Versions {
 
     const val slf4j = "1.7.30"
     const val log4j = "2.13.3"
+
+    const val proguard = "7.0.1"
 }
 
 @Suppress("unused")
